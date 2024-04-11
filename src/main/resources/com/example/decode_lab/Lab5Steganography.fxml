@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPane_anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="720.0" style="-fx-background-color: #C2C2C2;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.decode_lab.Lab5SteganographyController">
+    <children>
+        <Button fx:id="backContents_buttons" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-radius: 15; -fx-background-color: #3d3d3d;" text="назад" textFill="#e7e7e7">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+        <ToggleButton fx:id="colorCounter_toggleButton" contentDisplay="BOTTOM" layoutX="648.0" layoutY="414.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 100; -fx-background-color: #3d3d3d; -fx-border-color: #3d3d3d; -fx-border-radius: 100;" text="☼" textAlignment="CENTER" textFill="#e7e7e7" textOverrun="CLIP" wrapText="true">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </ToggleButton>
+      <Button fx:id="inputImage_button" layoutX="465.0" layoutY="77.0" mnemonicParsing="false" style="-fx-background-color: #3d3d3d; -fx-background-radius: 15;" text="загрузить изображение" textFill="#e7e7e7">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="encrypt_button" layoutX="95.0" layoutY="77.0" mnemonicParsing="false" style="-fx-background-color: #3d3d3d; -fx-background-radius: 15;" text="зашифровать" textFill="#e7e7e7">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="decrypt_button" layoutX="95.0" layoutY="415.0" mnemonicParsing="false" style="-fx-background-color: #3d3d3d; -fx-background-radius: 15;" text="расшифровать" textFill="#e7e7e7">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <TextField fx:id="input_textField" layoutX="95.0" layoutY="134.0" prefHeight="255.0" prefWidth="360.0" promptText="введите текст для шифрования" style="-fx-background-color: #3d3d3d;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Label fx:id="result_label" alignment="CENTER" contentDisplay="CENTER" layoutX="294.0" layoutY="415.0" prefHeight="35.0" prefWidth="171.0" style="-fx-background-color: #3d3d3d;" text="результат" textAlignment="CENTER" textFill="#e7e7e7" wrapText="true" />
+<!--      <ImageView fx:id="Picture_imageView" fitHeight="150.0" fitWidth="200.0" layoutX="489.0" layoutY="165.0" onMouseClicked="#tt" pickOnBounds="true" preserveRatio="true">-->
+<!--         <image>-->
+<!--            <Image url="@../../../../../../../../../test_java/2fc8173a-9e57-4e2e-8346-49f7389e0693.jpg" />-->
+<!--         </image>-->
+<!--      </ImageView>-->
+      <TextField fx:id="keyInputTextField" layoutX="268.0" layoutY="82.0" prefHeight="25.0" prefWidth="137.0" promptText="введите ключ (мин. 5)" style="-fx-background-color: #3d3d3d;" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<SplitPane fx:id="task_splitPane" dividerPositions="0.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="720.0" style="-fx-background-color: dbdbdb;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="com.example.decode_lab.TaskSelectionWindowController">
+  <items>
+    <AnchorPane fx:id="otherInfo_anchorPane" minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="80.0" style="-fx-background-color: dbdbdb;">
+         <children>
+            <AnchorPane layoutX="-1.0" prefHeight="50.0" prefWidth="108.0" style="-fx-background-color: c2c2c2;">
+               <children>
+                  <Text fx:id="list_text" layoutX="16.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Список">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <Button fx:id="work1_button" layoutX="-1.0" layoutY="50.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="108.0" text="Задание 1">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="work2_button" layoutX="-1.0" layoutY="85.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="108.0" text="Задание 2">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="work3_button" layoutX="-1.0" layoutY="120.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="108.0" text="Задание 3">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="work4_button" layoutX="-1.0" layoutY="155.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="108.0" text="Задание 4">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="work5_button" layoutX="-1.0" layoutY="190.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="108.0" text="Задание 5">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="work6_button" layoutX="-1.0" layoutY="225.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="108.0" text="Задание 6">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="work7_button" layoutX="-1.0" layoutY="260.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="108.0" text="Задание 7">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="work8_button" layoutX="-1.0" layoutY="295.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="108.0" text="Задание 8">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="work9_button" layoutX="-1.0" layoutY="330.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="108.0" text="Задание 9">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="work10_button" layoutX="-1.0" layoutY="365.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="108.0" text="Задание 10">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="work11_button" layoutX="-1.0" layoutY="400.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="108.0" text="Задание 11">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="work12_button" layoutX="-1.0" layoutY="435.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="108.0" text="Задание 12">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children></AnchorPane>
+    <AnchorPane fx:id="mainInfo_anchorPane" minHeight="0.0" minWidth="0.0" prefHeight="480.0" prefWidth="720.0" style="-fx-background-color: c2c2c2;">
+         <children>
+            <AnchorPane layoutX="-1.0" prefHeight="50.0" prefWidth="720.0" style="-fx-background-color: dbdbdb;">
+               <children>
+                  <Text fx:id="contents_label" layoutX="295.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Оглавление">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <ToggleButton fx:id="colorCounter_toggleButton" contentDisplay="BOTTOM" layoutX="648.0" layoutY="414.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 100; -fx-background-color: #3d3d3d; -fx-border-color: #3d3d3d; -fx-border-radius: 100;" text="☼" textAlignment="CENTER" textFill="#e7e7e7" textOverrun="CLIP" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </ToggleButton>
+            <Label fx:id="taskConditions_label" layoutX="105.0" layoutY="86.0" prefHeight="247.0" prefWidth="509.0" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="selectedJob_button" layoutX="284.0" layoutY="364.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" style="-fx-background-color: #3d3d3d; -fx-background-radius: 8; -fx-border-radius: 8;" text="Открыть задание" textFill="#e7e7e7">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <ToggleButton fx:id="vrapperColom_toggleButton" contentDisplay="BOTTOM" layoutX="14.0" layoutY="414.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-background-radius: 100; -fx-background-color: #3d3d3d; -fx-border-color: #3d3d3d; -fx-border-radius: 100;" text="&gt;" textAlignment="CENTER" textFill="#e7e7e7" textOverrun="CLIP" wrapText="true">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </ToggleButton>
+         </children></AnchorPane>
+  </items>
+</SplitPane>
